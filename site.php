@@ -18,8 +18,6 @@ function getPost($name)
     return "";
 }
 
-
-
 if (isset ($_POST['submit']))
 { 
     if($_POST['submit']=='log in')
@@ -43,7 +41,6 @@ if (isset ($_POST['submit']))
     echo "no need to create another account, just try <b>youcef</b> and <b>0000</b> ";
     }
 
-
 }
 else 
 {
@@ -59,7 +56,6 @@ password:<input type='password' name='password2021' value='<?php echo getPost("p
 <input type='submit' name='submit' value='log in'>
 <input type='submit' name='submit' value='forgot password'>
 <input type='submit' name='submit' value='create new account'>
-
 </form>
 <?php footer()?>
 </body>
