@@ -13,7 +13,7 @@ require("library/functions.php")
 ?>
 </head>
 <body>
-<?php  head()?><br><br>
+<?php head()?><br><br>
 <p> welcome page is here </p>
 <?php footer()?>
 </body>
