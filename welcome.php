@@ -8,7 +8,13 @@ csc155201F -->
 <?php
  
 // php library loading first
-require("library/functions.php")
+require("library/functions.php");
+session_start();
+if (!isset( $_SESSION['user']))
+{
+    header("Location: login.php");
+}
+
  
 ?>
 </head>
@@ -16,6 +22,7 @@ require("library/functions.php")
 <?php head()?><br><br>
 <p> welcome page is here </p>
 <?php footer()?>
+<?php echo $_SESSION['user'];?>
 </body>
 </html>
 
