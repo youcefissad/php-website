@@ -6,24 +6,16 @@ csc155201F -->
 <head>
 <title>Log In Page</title>
 <?php
-require("library/functions.php"); 
+require("library/functions.php");
+session_start(); 
  
-function getPost($name)  
-{
-
- if (isset($_POST[$name]) ) 
-    {
-        return htmlspecialchars($_POST[$name]);
-    }
-    return "";
-}
-
 if (isset ($_POST['submit']))
 { 
     if($_POST['submit']=='log in')
     {
          if ($_POST['username2021']=='youcef' && $_POST['password2021']=='0000')
            {
+             $_SESSION['user']=$_POST['username2021'];
              header("Location:welcome.php");
            }
     

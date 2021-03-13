@@ -7,13 +7,17 @@ csc155201F -->
 <title>log out page</title>
 <?php 
 // php library loading first
-require("library/functions.php")
- 
+require("library/functions.php");
+secure_pages();
+unset($_SESSION['user']);
+header ("refresh:5;url=site.php"); 
+
 ?>
 </head>
 <body>
 <?php  head()?><br><br>
-<p> log out page is here </p>
+<h1> thank you for visiting our website!!! by </h1>
+
 <?php footer()?>
 </body>
 </html>

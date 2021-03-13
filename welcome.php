@@ -9,11 +9,7 @@ csc155201F -->
  
 // php library loading first
 require("library/functions.php");
-session_start();
-if (!isset( $_SESSION['user']))
-{
-    header("Location: login.php");
-}
+secure_pages();
 
  
 ?>
