@@ -5,6 +5,8 @@ function head ()
   echo "<center>";
   echo "<h3>Youcef Issad 155201F</h3>";
   echo "<img src='http://www.csit.parkland.edu/~yissad1/images/1.png'>";
+  echo "  ";
+  echo "<img src='http://www.csit.parkland.edu/~yissad1/CSC/csc155201F/15-PHPsite/php-website/phpimages/image1.png'>";
   }
  
 
@@ -25,7 +27,8 @@ echo "<a href='purchaseItem3.php'> purchase knives  </a>";
 echo "   |  ";
 echo "<a href='purchaseItem4.php'> purchase spoons </a>";
 echo "   |  ";
-echo "<a href='shoppingCarte.php'> shopping carte page </a>";
+echo "<a href='shoppingCarte.php'> shopping carte page </a><br>";
+echo "<img src='http://www.csit.parkland.edu/~yissad1/CSC/csc155201F/15-PHPsite/php-website/phpimages/image2.png'>";
 }
 
 function secure_pages()
