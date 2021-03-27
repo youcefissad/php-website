@@ -32,7 +32,6 @@ if (isset ($_POST['submit']))
     {
     echo "no need to create another account, just try <b>youcef</b> and <b>0000</b> ";
     }
-
 }
 else 
 {
