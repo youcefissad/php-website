@@ -82,14 +82,14 @@ if (isset($_POST['submit']))
 </td>
 </tr>
 <tr>
-<td><?php echo $formerror;?></td>
-</tr>
-<tr>
 <td align='center'><input type='submit' name='submit' value='Create new user'>
     <input type='submit' name='submit' value='Cancel'></td>
 </tr>
 </form>
 </table>
+<br>
+<p align='center'><b>Warning!!</b>: <?php echo $formerror;?></p>
+
 
 </body>
 </html>
