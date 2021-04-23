@@ -43,7 +43,7 @@ else
 username:<input type='text' name='username2021' value='<?php echo getPost("username2021");?>'> <br>
 password:<input type='password' name='password2021' value='<?php echo getPost("password2021");?>'> <br>
 <input type='submit' name='submit' value='log in'>
-<input type='submit' name='submit' value='forgot password'><br>
+<input type='submit' name='submit' value='forgot password'>
 <a href='newUser.php'> Create new account</a>
 </form>
 
