@@ -8,12 +8,13 @@ csc155201F -->
 <?php
 require("library/functions.php");
 session_start(); 
- 
+$conn = getConn();
 if (isset ($_POST['submit']))
 { 
     if($_POST['submit']=='log in')
     {
-         if ($_POST['username2021']=='youcef' && $_POST['password2021']=='0000')
+     $row = lookupUsername($conn, getPost('username2021'));
+           if ($row != 0 && password_verify($_POST['password2021'], $row['encrypted_password']) )
            {
              $_SESSION['user']=$_POST['username2021'];
              header("Location:welcome.php");
@@ -28,10 +29,7 @@ if (isset ($_POST['submit']))
     { 
     echo "try <b>youcef</b> and <b>0000</b> ";
     }
-   else if($_POST['submit']=='create new account')
-    {
-    echo "no need to create another account, just try <b>youcef</b> and <b>0000</b> ";
-    }
+  
 }
 else 
 {
@@ -45,9 +43,10 @@ else
 username:<input type='text' name='username2021' value='<?php echo getPost("username2021");?>'> <br>
 password:<input type='password' name='password2021' value='<?php echo getPost("password2021");?>'> <br>
 <input type='submit' name='submit' value='log in'>
-<input type='submit' name='submit' value='forgot password'>
-<input type='submit' name='submit' value='create new account'>
+<input type='submit' name='submit' value='forgot password'><br>
+<a href='newUser.php'> Create new account</a>
 </form>
+
 <?php footer()?>
 </body>
 </html>
