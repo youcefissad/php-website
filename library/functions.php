@@ -18,7 +18,6 @@ else
   echo "<img src='http://www.csit.parkland.edu/~yissad1/CSC/csc155201F/15-PHPsite/php-website/phpimages/image1.png'>";
   }
  
-
 function footer()
 {
 echo "<center><strong>";
