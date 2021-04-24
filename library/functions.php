@@ -83,7 +83,7 @@ function print_forks($times)
 {
   for ($i=0;$i<$times;$i++)
   {
-  echo "<img src='phpimages/fork.jpg' alt='fork' width='40' height='40'>";
+   echo "<img src='phpimages/fork.jpg' alt='fork' width='40' height='40'>";
   }
 }
 
