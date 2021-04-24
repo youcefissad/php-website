@@ -29,8 +29,7 @@ if (isset ($_POST['submit']))
    else if($_POST['submit']=='forgot password')
     { 
     echo "try <b>youcef</b> and <b>0000</b> ";
-    }
-  
+    }  
 }
 else 
 {
