@@ -16,7 +16,8 @@ if (isset ($_POST['submit']))
      $row = lookupUsername($conn, getPost('username2021'));
            if ($row != 0 && password_verify($_POST['password2021'], $row['encrypted_password']) )
            {
-             $_SESSION['user']=$_POST['username2021'];
+             $_SESSION['user'] = getPost('username2021');
+             $_SESSION['group'] = $row['usergroup'];
              header("Location:welcome.php");
            }
     
@@ -47,7 +48,6 @@ password:<input type='password' name='password2021' value='<?php echo getPost("p
 <a href='newUser.php'> Create new account</a>
 </form>
 
-<?php footer()?>
 </body>
 </html>
 
